@@ -1,1 +1,61 @@
-/*# sourceMappingURL=Nav.module.css.map */
+.Nav {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+.Nav .Right_Side,
+.Nav .Left_Side {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Nav .Left_Side .Logo_Container {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.Nav .Left_Side .Brand {
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+}
+.Nav .Right_Side .Navlink_Container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Nav .Right_Side .Navlink_Container .NavItem .Navlink {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+}
+.Nav .Right_Side .Navlink_Container .NavItem:hover {
+  border-bottom: 1px solid white;
+}
+.Nav .Right_Side .MenuIcon {
+  display: none;
+}/*# sourceMappingURL=Nav.module.css.map */

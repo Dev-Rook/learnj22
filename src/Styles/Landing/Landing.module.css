@@ -1,4 +1,4 @@
-.App {
+.Page {
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
@@ -6,4 +6,4 @@
   align-items: center;
   height: 100vh;
   width: 100%;
-}/*# sourceMappingURL=App.module.css.map */
+}/*# sourceMappingURL=Landing.module.css.map */

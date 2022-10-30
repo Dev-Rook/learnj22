@@ -18,7 +18,7 @@ const Nav = () => {
           <img src="" alt="" className={Styles.Logo} />
         </div>
 
-        <h3 className={Styles.Brand}>Brand</h3>
+        <h3 className={Styles.Brand}>Learn J22</h3>
       </div>
 
       <div className={Styles.Right_Side}>
