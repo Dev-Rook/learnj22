@@ -1,17 +1,32 @@
 .Nav {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   display: flex;
 
   padding: 5px;
   justify-content: space-between;
   align-items: center;
 
+  position: relative;
   position: absolute;
   top: 0px;
   left: 0px;
 
   height: fit-content;
   width: 100%;
+
+  ::-webkit-scrollbar-track {
+    border-radius: 0.125rem;
+    background-color: #283237;
+  }
+  ::-webkit-scrollbar {
+    width: 0.25rem;
+    border-radius: 0.125rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0.125rem;
+    background-color: gray;
+  }
 
   .Right_Side,
   .Left_Side {
@@ -26,16 +41,16 @@
 
   .Left_Side {
     .Logo_Container {
-        border: 1px solid white;
-        border-radius: 50%;
-        height: 30px;
-        width: 30px;
+      border: 1px solid white;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
     }
 
     .Brand {
-        color: white;
-        font-size: 18px;
-        font-weight: 300;
+      color: white;
+      font-size: 18px;
+      font-weight: 300;
     }
   }
 
@@ -66,4 +81,131 @@
       display: none;
     }
   }
+
+  //   Mobile Menu Start
+
+  .Mobile_Menu_Container {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    justify-content: left;
+    align-items: left;
+
+    overflow-y: scroll;
+
+    height: 100vh;
+    width: 100%;
+
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: translateX(-100%);
+
+    display: none;
+
+    .Content_Container {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background-color: #283237;
+
+      gap: 20px;
+
+      display: flex;
+      flex-direction: column;
+
+      height: 100%;
+      width: 500px;
+
+      .Header {
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        padding: 5px;
+        gap: 20px;
+
+        justify-content: space-between;
+        align-items: center;
+
+        height: fit-content;
+        width: 100%;
+
+        .Logo_Container {
+          border: 1px solid white;
+          border-radius: 50%;
+          height: 30px;
+          width: 30px;
+        }
+      }
+
+      .Mobile_Navlink_Container {
+        border: 1px solid white;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+
+        justify-content: space-evenly;
+        align-items: left;
+
+        height: fit-content;
+        width: 100%;
+
+        .Mobile_NavItem {
+          display: flex;
+
+          padding: 5px;
+
+          width: 100%;
+          height: fit-content;
+
+          color: white;
+          font-size: 15px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .Reveal {
+    transform: translateX(0%);
+  }
+
+  //   Mobile Menu End
 }
+
+// Media Queries Start
+
+@media only screen and (max-width: 768px) {
+  .Nav {
+    .Right_Side {
+      .Navlink_Container {
+        display: none;
+      }
+
+      .MenuIcon {
+        display: block;
+      }
+    }
+    .Mobile_Menu_Container {
+      display: flex;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Nav {
+    .Mobile_Menu_Container {
+      .Content_Container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Media Queries End
