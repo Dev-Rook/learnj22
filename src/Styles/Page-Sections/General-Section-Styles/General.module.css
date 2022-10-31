@@ -1,0 +1,62 @@
+.Section {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 1250px;
+}
+.Section .Section_Header_Image_Container {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+  transition: 0.5s;
+}
+.Section .Section_Header_Image_Container .Section_Image {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+.Section .Section_Title {
+  color: #e3b261;
+  font-size: 25px;
+  font-weight: 300;
+  margin: auto;
+  margin-left: 0px;
+}
+.Section .Section_Description {
+  color: white;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 200;
+  margin: auto;
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .Section {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .Section .Section_Header_Image_Container {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .Section .Section_Header_Image_Container {
+    height: 250px;
+  }
+}/*# sourceMappingURL=General.module.css.map */

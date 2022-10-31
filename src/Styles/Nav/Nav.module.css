@@ -1,5 +1,6 @@
 .Nav {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #283237;
   display: flex;
   padding: 5px;
   justify-content: space-between;
@@ -43,6 +44,7 @@
   border-radius: 50%;
   height: 30px;
   width: 30px;
+  cursor: pointer;
 }
 .Nav .Left_Side .Brand {
   color: white;
@@ -70,6 +72,7 @@
   border-bottom: 1px solid white;
 }
 .Nav .Right_Side .MenuIcon {
+  cursor: pointer;
   display: none;
 }
 .Nav .Mobile_Menu_Container {
@@ -117,6 +120,10 @@
   border-radius: 50%;
   height: 30px;
   width: 30px;
+  cursor: pointer;
+}
+.Nav .Mobile_Menu_Container .Content_Container .Header .CloseIcon {
+  cursor: pointer;
 }
 .Nav .Mobile_Menu_Container .Content_Container .Mobile_Navlink_Container {
   border: 1px solid white;
