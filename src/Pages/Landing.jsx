@@ -7,6 +7,7 @@ const Landing = () => {
   return (
     <div className={Styles.Page}>
       <Knots_Ropes />
+      <Knots_Ropes />
     </div>
   )
 }

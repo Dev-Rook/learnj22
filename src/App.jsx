@@ -5,6 +5,8 @@ import Styles from "./App.module.css";
 import Nav from "./Components/Main/Nav";
 import Landing from "./Pages/Landing";
 
+import Details from "./Dynamic-Pages/Details"
+
 function App() {
   return (
     <div className={Styles.App}>
@@ -12,6 +14,10 @@ function App() {
         <Nav />
         <Routes>
           <Route path={"/"} element={<Landing />} />
+
+          {/* Dynamic Routes Start */}
+          <Route path={"Details/:id"} element={<Details/>} />
+          {/* Dynamic Routes End */}
         </Routes>
       </BrowserRouter>
     </div>

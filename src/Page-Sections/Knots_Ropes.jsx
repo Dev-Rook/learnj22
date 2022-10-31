@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Styles from "../Styles/Page-Sections/General-Section-Styles/General.module.css";
 
+import DemoSlide from "../Components/Sliders/DemoSlide";
+
 const Knots_Ropes = () => {
   return (
     <div className={Styles.Section}>
@@ -16,6 +18,8 @@ const Knots_Ropes = () => {
         possimus amet beatae nihil accusamus laudantium architecto debitis saepe
         deserunt?
       </p>
+
+      <DemoSlide />
     </div>
   );
 };

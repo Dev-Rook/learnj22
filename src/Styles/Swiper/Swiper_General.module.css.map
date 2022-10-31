@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"Swiper_General.module.css"}
+{"version":3,"sources":["Swiper_General.module.scss","Swiper_General.module.css"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,sBAAA;EAEA,uBAAA;EACA,mBAAA;EACA,gBAAA;EAEA,2BAAA;EAAA,wBAAA;EAAA,mBAAA;EACA,WAAA;ACDF;ADII;EACE,2CAAA;EACA,uBAAA;EACA,oCAAA;EAEA,aAAA;EACA,kBAAA;EAEA,gBAAA;EAEA,aAAA;EACA,YAAA;ACLN;ADOM;EACE,YAAA;EACA,kBAAA;EACA,eAAA;EACA,gBAAA;EAEA,kBAAA;EACA,YAAA;EACA,UAAA;ACNR","file":"Swiper_General.module.css"}
